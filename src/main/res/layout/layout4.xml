@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="660dp">
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Length"
+     android:textSize="25sp"
+     android:layout_marginStart="10dp"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="5dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume"
+        android:textSize="25sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volumetric Flowrate"
+        android:textSize="25sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure"
+        android:textSize="25sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Density"
+        android:textSize="25sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="400dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mass"
+        android:textSize="25sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="500dp"/>
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/input1"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp" />
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_toRightOf="@+id/input1"
+        android:layout_toEndOf="@+id/input1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to"
+        android:textSize="25sp"
+        android:layout_toRightOf="@+id/spinner1"
+        android:layout_toEndOf="@+id/spinner1"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/text1"
+        />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_toRightOf="@+id/text1"
+        android:layout_toEndOf="@+id/text1"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginEnd="31dp"
+            android:id="@+id/input2"
+            android:inputType="numberDecimal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp">
+
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/input3"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp" />
+
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_toRightOf="@+id/input3"
+            android:layout_toEndOf="@+id/input3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/spinner3"
+            android:layout_toEndOf="@+id/spinner3"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/text3"
+            />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_toRightOf="@+id/text3"
+            android:layout_toEndOf="@+id/text3"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginEnd="31dp"
+            android:id="@+id/input4"
+            android:inputType="numberDecimal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="240dp">
+
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/input5"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp" />
+
+
+        <Spinner
+            android:id="@+id/spinner5"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_toRightOf="@+id/input5"
+            android:layout_toEndOf="@+id/input5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/spinner5"
+            android:layout_toEndOf="@+id/spinner5"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/text5"
+            />
+
+        <Spinner
+            android:id="@+id/spinner6"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_toRightOf="@+id/text5"
+            android:layout_toEndOf="@+id/text5"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginEnd="31dp"
+            android:id="@+id/input6"
+            android:inputType="numberDecimal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="340dp">
+
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/input7"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp" />
+
+
+        <Spinner
+            android:id="@+id/spinner7"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_toRightOf="@+id/input7"
+            android:layout_toEndOf="@+id/input7"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/spinner7"
+            android:layout_toEndOf="@+id/spinner7"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/text7"
+            />
+
+        <Spinner
+            android:id="@+id/spinner8"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_toRightOf="@+id/text7"
+            android:layout_toEndOf="@+id/text7"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginEnd="31dp"
+            android:id="@+id/input8"
+            android:inputType="numberDecimal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="440dp">
+
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/input9"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp" />
+
+
+        <Spinner
+            android:id="@+id/spinner9"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_toRightOf="@+id/input9"
+            android:layout_toEndOf="@+id/input9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/spinner9"
+            android:layout_toEndOf="@+id/spinner9"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/text9"
+            />
+
+        <Spinner
+            android:id="@+id/spinner10"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_toRightOf="@+id/text9"
+            android:layout_toEndOf="@+id/text9"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginEnd="31dp"
+            android:id="@+id/input10"
+            android:inputType="numberDecimal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="540dp">
+
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/input11"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp" />
+
+
+        <Spinner
+            android:id="@+id/spinner11"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_toRightOf="@+id/input11"
+            android:layout_toEndOf="@+id/input11"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to"
+            android:textSize="25sp"
+            android:layout_toRightOf="@+id/spinner11"
+            android:layout_toEndOf="@+id/spinner11"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="10dp"
+            android:id="@+id/text11"
+            />
+
+        <Spinner
+            android:id="@+id/spinner12"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:layout_toRightOf="@+id/text11"
+            android:layout_toEndOf="@+id/text11"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginEnd="31dp"
+            android:id="@+id/input12"
+            android:inputType="numberDecimal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:textSize="15sp"
+            android:id="@+id/button1"
+            android:onClick="convert"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+</ScrollView>
+
+

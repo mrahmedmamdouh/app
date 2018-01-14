@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#f4f4f4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pump Output : "
+        android:textSize="25dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/colorPrimary"/>
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:orientation="vertical"
+        android:id="@+id/relative1">
+
+        <EditText
+            android:id="@+id/output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/output"
+            android:layout_marginLeft="83dp"
+            android:layout_marginStart="220dp"
+            android:text="liters/stk"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relative2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/ann"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="40dp"
+            android:text="Annular Volume"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ann"
+            android:layout_marginLeft="74dp"
+            android:layout_marginStart="74dp"
+            android:layout_toEndOf="@+id/ann"
+            android:layout_toRightOf="@+id/ann"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ann"
+            android:layout_marginLeft="120dp"
+            android:layout_marginStart="120dp"
+            android:layout_toEndOf="@+id/ann"
+            android:layout_toRightOf="@+id/ann"
+            android:text="m3"
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#f4f4f4"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/output1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Hole Size   =    "
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/output1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/output1"
+            android:layout_marginLeft="83dp"
+            android:layout_marginStart="220dp"
+            android:text="Inch"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#f4f4f4"
+        android:orientation="vertical">
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/output2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Drill pipe OD ="
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/output2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/output2"
+        android:layout_marginLeft="83dp"
+        android:layout_marginStart="220dp"
+        android:text="Inch"
+        android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#f4f4f4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/output3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Length of annulus ="
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/output3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="25dp"
+            android:layout_marginStart="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/output3"
+            android:layout_marginLeft="83dp"
+            android:layout_marginStart="240dp"
+            android:text="Meter"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#f4f4f4"
+        android:orientation="vertical">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lag Time In Strokes"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:id="@+id/lag"
+        android:onClick="onClick"
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_alignBaseline="@+id/lag"
+        android:textSize="25dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:id="@+id/lagtime"
+        />
+    </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
